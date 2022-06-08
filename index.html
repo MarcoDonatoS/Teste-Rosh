@@ -136,10 +136,20 @@
         color: #51ACFF;
     }
     .produtos-destaque{
-        padding: 0px 72px 0px 56px;
         list-style: none;
         display: flex;
         justify-content: space-around;
+        margin: 5px auto;
+    }
+    .produto-meia{
+        position: relative;
+        left: 15px;
+    }
+    .produto-tenis{
+        padding-left: 10px;
+    }
+    .produto-mochila{
+        padding-right: 50px;
     }
     .produto{
         text-align: left;
@@ -319,16 +329,16 @@
                 <nav class="nav-descubra-mais"> <a href="http://#" alt="Descubra mais >"></a> Descubra mais ></nav>
             </div>
             <ul class="produtos-destaque">
-                <li>
+                <li class="produto-tenis">
                     <img src="img/tenis.jpg" alt="New Balance" width="128" height="128">
                     <p class="produto"><strong>New Balance MSX90RPB (Cinza)</strong><br><br> <preco>R$ 535,00</preco></p>
 
                 </li>
-                <li>
+                <li class="produto-meia">
                     <img src="img/meia.png" alt="Stussy" width="128" height="128">
                     <p class="produto"><strong>Meia - Stussy Stripe Crew (Branco - Laranja)</strong> <br><br> <preco>R$20,00</preco></p>
                 </li>
-                <li>
+                <li class="produto-mochila">
                     <img src="img/mochila.jpg" alt="Kanken" width="128" height="128">
                     <p class="produto"><strong>Mochila -  Kanken No.2 Total (Preto)</strong><br><br> <preco>R$799,00</preco> </p>
                 </li>
@@ -377,7 +387,7 @@
         <td>
             <div class="links">
                 <nav class="link-tt"><a href="#"> Siga @prfctfit on twitter →</a></nav>
-                <nav class="link-sub"><a href="#"> Unsubscribe</a></nav>
+                <nav class="link-sub"><u> Unsubscribe</u></nav>
             </div>
         </td>
     </tr>
