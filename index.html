@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emkt-Rosh</title>
+    <style type="text/css" > 
+    body{
+        margin: 0;
+        background-color: #F5F5F5;
+    }
+    table{
+        border-spacing: 0;
+    }
+    td{
+        padding: 0;
+    }
+    img{
+        border: 0;
+    }
+    .wrapper{
+        width: 100%;
+        table-layout: fixed;
+        background-color: #F5F5F5;
+        padding-bottom: 60px;
+    }
+    .main{
+        background-color: white;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 560px;
+        border-spacing: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+    .two-coloumns{
+        text-align: center;
+        font-size: 0;
+    }
+    .table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .two-coloumns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        
+    }
+    .perfil{
+        position: relative;
+        left: 10px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #7D7D7D;
+
+    }
+    .nome-perfil{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0C1014;
+    }
+    .bag{
+        display: flex;
+        align-items: center;   
+    }
+    
+    .vector-bag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 5px;
+    }
+    .bag-loja{
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+    }
+    .banner{
+        text-align: center;
+    }
+    .subtitulo{
+        text-align: left;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px 72px 0px 56px;
+    }
+    .texto{
+        text-align: left;
+        font-weight: 400;
+        line-height: 22px;
+        font-size: 16px;
+        max-width: 500px;
+        padding: 0px 72px 0px 56px;
+        color: #515759;
+    }
+    .vouncher{
+        border-radius: 8px;
+        background: #F1F1F1;
+        margin: 10px 177px 10px 177px;
+        padding: 17px 35px;
+        border-color: #F1F1F1;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .termos{
+        padding: 0px 72px 30px 56px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #B6B6B6;
+    }
+    .descubra-mais{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        
+    }
+    .nav-descubra-mais{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: right;
+        padding-left: 80px;
+        color: #51ACFF;
+    }
+    .produtos-destaque{
+        padding: 0px 72px 0px 56px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .produto{
+        text-align: left;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+        color: #0C1014;
+        vertical-align: top;
+    }
+    preco{
+        text-align: left;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        color: #515759;
+        padding: 30px 0px 50px 0px;
+
+    }
+    .texto-fooder{
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        color: #B6B6B6;
+        padding-top: 20px;
+    }
+    .marca-logos{
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .vans{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 50px;
+
+    }
+    .logo-adidas{
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        right:70px;
+    }
+    .stussy{
+        position: relative;
+        right: 50px;
+    }
+    .fjall{
+        position: relative;
+        right: 30px;
+    }
+    .nikeA{
+        position: relative;
+        right: 10px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .link-tt{
+        position: relative;
+        right: 120px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1890FF;
+    }
+    .link-sub{
+        position: relative;
+        left: 120px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: #B6B6B6;
+    }
+
+    </style>
+
+</head>
+<body>
+    <center class="wrapper">
+        <table class="main" width="100%">
+            <tr>
+                <td height="48" style="background-color: #f5f5f5"></td>
+            </tr>
+        
+
+    <tr>
+        <td style="padding: 14px 0 4px;">
+            <table width="100%">
+                <tr>
+                    <td class="two-columns">
+                      <div class="table"> 
+                            <table class="column">
+                                <tr>
+                                    <td style="padding: 48px 40px;">
+                                        <div class="container"> 
+                                            <a href="#"><img src="img/Ellipse.jpg" alt="foto-perfil" width="48" title="foto-perfil"></a>
+                                            <p class="perfil"> <strong class="nome-perfil">Ana Maria</strong> <br>
+                                            Co-Fouder</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table> 
+
+                       <table class="column">
+                           <tr>
+                               <td style="padding: 10px 72px;">
+                                    <div class="bag">
+                                    <div class="vector-bag">
+                                        <img src="img/Vector (1).jpg" alt="alca" width="10" height="6">
+                                        <img src="img/Vector.jpg" alt="bag" width="25" height="18">
+                                    </div>
+                                    <div class="bag-loja">
+                                        <img src="img/p.jpg" width="10" height="12">
+                                        <img src="img/r.jpg" width="10" height="12">
+                                        <img src="img/f.jpg" width="8" height="12">
+                                        <img src="img/c.jpg" width="10" height="12">
+                                        <img src="img/t.jpg" width="10" height="12">
+                                    </div>
+                                         <img src="img/f.jpg" width="8" height="12">
+                                         <img src="img/i.jpg" width="3" height="12">
+                                         <img src="img/t.jpg"    width="10" height="12">
+                                    </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+     <tr>
+         <td>
+             <div class="banner">
+                <a href="#"><img src="img/Rectangle.jpg" alt="Banner" width="448" height="256"></a>
+            </div>
+         </td>
+     </tr>
+
+     <tr>
+         <td>
+            <h2 class="subtitulo"> <strong> Poupe R$ 10,00 na sua próxima encomenda </strong></h2>
+         </td>
+     </tr>
+
+     <tr>
+         <td>
+            <div class="texto">
+                <p>Olá João Silva. Bem-vindo à Loja PRFCT FIT! <br>
+                Sou Ana Maria cofundadora da prfctfit.com. Estamos felizes por tê-lo aqui :) Preparámos um pequeno presente para você — R$ 10,00 de desconto na sua próxima encomenda. </p>
+                
+                <p>E se isso não for suficiente, manteremos você atualizado com os últimos lançamentos, tendências da moda, ofertas especiais e muito mais.</p>
+            </div>
+         </td>
+     </tr>
+
+     <tr>
+         <td>
+             <h2 class="subtitulo">O seu código de voucher de R$ 10,00</h2>
+             <button class="vouncher"> <strong>MJ2-S23-Q77 </strong></button>
+             <p class="termos">*Termos e condições completos podem ser encontrados aqui</p>
+         </td>
+     </tr>
+
+     <tr>
+         <td>
+            <div class="descubra-mais">
+                <h2 class="subtitulo"> <strong>Você pode gostar</strong> </h2>
+                <nav class="nav-descubra-mais"> <a href="http://#" alt="Descubra mais >"></a> Descubra mais ></nav>
+            </div>
+            <ul class="produtos-destaque">
+                <li>
+                    <img src="img/tenis.jpg" alt="New Balance" width="128" height="128">
+                    <p class="produto"><strong>New Balance MSX90RPB (Cinza)</strong><br><br> <preco>R$ 535,00</preco></p>
+
+                </li>
+                <li>
+                    <img src="img/meia.png" alt="Stussy" width="128" height="128">
+                    <p class="produto"><strong>Meia - Stussy Stripe Crew (Branco - Laranja)</strong> <br><br> <preco>R$20,00</preco></p>
+                </li>
+                <li>
+                    <img src="img/mochila.jpg" alt="Kanken" width="128" height="128">
+                    <p class="produto"><strong>Mochila -  Kanken No.2 Total (Preto)</strong><br><br> <preco>R$799,00</preco> </p>
+                </li>
+
+            </ul>
+         </td>
+     </tr>
+    
+     <tr>
+        <td style="padding: 30px 0 4px;">
+        </td>
+     </tr>
+  
+
+        </table>
+
+        <table class="fooder">
+    <tr>
+        <td>
+            <p class="texto-fooder">Parceria com as marcas famosas:</p>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            <ul class="marca-logos">
+                <li><div class="vans">
+                <img src="img/vans.jpg" alt="logo vans"
+                width="38" height="13">
+                <img src="img/vans2.jpg" alt="alogo vans 2" width="50" height="4">
+                </div></li>
+                <li><div class="adidas">
+                  <ul class="logo-adidas"> <li> <img src="img/adidas.jpg" alt="logo adidas" width="12" height="6"></li>
+                    <li><img src="img/adidas2.jpg" alt="logo adidas 2" width="16" height="15"></li>
+                    <li><img src="img/adidas3.jpg" alt="logo adidas 3" width="22" height="23"></li>
+                </ul> 
+                </div></li>
+                <li class="stussy"><img src="img/stussy.jpg" alt="Logo Stussy" width=43" height="40"></li>
+                <li class="fjall"> <img src="img/fjall.jpg" alt="Logo Fjall" width="44" height="15"></li>
+                <li class="nike"> <img src="img/nike.jpg" alt="Logo nike" width="48" height="16.5"></li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="links">
+                <nav class="link-tt"><a href="#"> Siga @prfctfit on twitter →</a></nav>
+                <nav class="link-sub"><a href="#"> Unsubscribe</a></nav>
+            </div>
+        </td>
+    </tr>
+        </table>
+    </center>
+</body>
+</html>
